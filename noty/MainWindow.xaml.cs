@@ -3,6 +3,7 @@ using System.Windows;
 using System;
 using Microsoft.Win32;
 using System.IO;
+using System.Windows.Controls;
 
 namespace noty
 {
@@ -60,6 +61,18 @@ namespace noty
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void Button_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            var target = (Button)sender;
+            target.Opacity = 1.0;
+        }
+
+        private void Button_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            var target = (Button)sender;
+            target.Opacity = 0.3;
         }
     }
 }

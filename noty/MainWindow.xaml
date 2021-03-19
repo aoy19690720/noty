@@ -7,7 +7,8 @@
         xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         Title="noty" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        TitleCharacterCasing="Normal">
     <Grid
         FocusManager.FocusedElement="{Binding ElementName=TextArea}">
         <Grid.RowDefinitions>
@@ -31,15 +32,21 @@
             HorizontalAlignment="Right">
             <Button 
                 Width="70" 
+                Opacity="0.3"
                 Focusable="False"
                 Content="Load"
-                Click="LoadButton_Click"/>
+                Click="LoadButton_Click"
+                MouseEnter="Button_MouseEnter"
+                MouseLeave="Button_MouseLeave"/>
             <Button 
                 Width="70" 
                 Margin="10, 0"
+                Opacity="0.3"
                 Focusable="False"
                 Content="Save"
-                Click="SaveButton_Click"/>
+                Click="SaveButton_Click"
+                MouseEnter="Button_MouseEnter"
+                MouseLeave="Button_MouseLeave"/>
         </StackPanel>
     </Grid>
 </metro:MetroWindow>
