@@ -21,7 +21,7 @@ namespace noty
             var dialog = new OpenFileDialog
             {
                 InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory),
-                Filter = "Text file | *.txt",
+                Filter = "Text file (.txt) | *.txt",
                 Title = "File load",
                 RestoreDirectory = true
             };
@@ -45,7 +45,7 @@ namespace noty
             {
                 FileName = "note.txt",
                 InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory),
-                Filter = "Text file | *.txt",
+                Filter = "Text file (.txt) | *.txt",
                 Title = "File save",
                 RestoreDirectory = true
             };
